@@ -104,72 +104,72 @@ let studentInfo = [
 
 // let input = document.getElementById("numberr").value;
 // let inputter = input.value
-let result = document.getElementById("result");
-const numberToWords = {
-    1: "one",
-    2: "two",
-    3: "three",
-    4: "four",
-    5: "five",
-    6: "six",
-    7: "seven",
-    8: "eight",
-    9: "nine",
-    10: "ten",
-    11: "eleven",
-    12: "twelve",
-    13: "thirteen",
-    14: "fourteen",
-    15: "fifteen",
-    16: "sixteen",
-    17: "seventeen",
-    18: "eighteen",
-    19: "nineteen",
-    20: "twenty",
-    21: "twenty-one",
-    22: "twenty-two",
-    23: "twenty-three",
-    24: "twenty-four",
-    25: "twenty-five",
-    26: "twenty-six",
-    27: "twenty-seven",
-    28: "twenty-eight",
-    29: "twenty-nine",
-    30: "thirty",
-    31: "thirty-one",
-    32: "thirty-two",
-    33: "thirty-three",
-    34: "thirty-four",
-    35: "thirty-five",
-    36: "thirty-six",
-    37: "thirty-seven",
-    38: "thirty-eight",
-    39: "thirty-nine",
-    40: "forty",
-    41: "forty-one",
-    42: "forty-two",
-    43: "forty-three",
-    44: "forty-four",
-    45: "forty-five",
-    46: "forty-six",
-    47: "forty-seven",
-    48: "forty-eight",
-    49: "forty-nine",
-    50: "fifty",
-};
+// let result = document.getElementById("result");
+// const numberToWords = {
+//     1: "one",
+//     2: "two",
+//     3: "three",
+//     4: "four",
+//     5: "five",
+//     6: "six",
+//     7: "seven",
+//     8: "eight",
+//     9: "nine",
+//     10: "ten",
+//     11: "eleven",
+//     12: "twelve",
+//     13: "thirteen",
+//     14: "fourteen",
+//     15: "fifteen",
+//     16: "sixteen",
+//     17: "seventeen",
+//     18: "eighteen",
+//     19: "nineteen",
+//     20: "twenty",
+//     21: "twenty-one",
+//     22: "twenty-two",
+//     23: "twenty-three",
+//     24: "twenty-four",
+//     25: "twenty-five",
+//     26: "twenty-six",
+//     27: "twenty-seven",
+//     28: "twenty-eight",
+//     29: "twenty-nine",
+//     30: "thirty",
+//     31: "thirty-one",
+//     32: "thirty-two",
+//     33: "thirty-three",
+//     34: "thirty-four",
+//     35: "thirty-five",
+//     36: "thirty-six",
+//     37: "thirty-seven",
+//     38: "thirty-eight",
+//     39: "thirty-nine",
+//     40: "forty",
+//     41: "forty-one",
+//     42: "forty-two",
+//     43: "forty-three",
+//     44: "forty-four",
+//     45: "forty-five",
+//     46: "forty-six",
+//     47: "forty-seven",
+//     48: "forty-eight",
+//     49: "forty-nine",
+//     50: "fifty",
+// };
 
 
 
-// console.log(typeof input)
+// // console.log(typeof input)
 
-function converter(){
-const input = document.getElementById("numberr").value;
-    let { [input]: word} = numberToWords
+// function converter(){
+// const input = document.getElementById("numberr").value;
+//     let { [input]: word} = numberToWords
 
-console.log(word)
+// console.log(word)
 
-result.innerHTML= "THE NUMBER IN WORD IS " + word
-}
+// result.innerHTML= "THE NUMBER IN WORD IS " + word
+// }
 
 
 
@@ -179,3 +179,42 @@ result.innerHTML= "THE NUMBER IN WORD IS " + word
     
 //     result.innerHTML = word;
 // }
+
+let seer = document.getElementById('seemore')
+let one = document.getElementById('oner')
+let two = document.getElementById('twoer')
+let output = document.getElementById('out');
+let posit = document.getElementById('pos');
+let fil = document.getElementById('filtrate');
+let verbal = document.getElementById('verbs');
+verbal.innerHTML = "Run, jump, swim, dance, write, read, <br> create, explore, imagine, discover, learn, teach, <br> cook, bake, paint, draw, sing, play, <br> laugh, think, listen, speak, build, travel, <br> share, connect, help, solve, dream, grow, <br> and, enjoy, the, journey, of, life." ;
+function getter() {
+    let verbz = verbal.innerText; 
+    let filler = fil.value; 
+    let go = verbz.search(filler); 
+    if (go !== -1) {
+        output.innerText = filler;
+        posit.innerText = go + 1; 
+    } else {
+        output.innerText = "Not found";
+        posit.innerText = "Not found";
+    }
+}
+
+one.innerHTML = "BrightNest Home Solutions is a dynamic startup focused on transforming residential spaces with smart technology. Launched in 2022, the company designs innovative home automation systems that enhance comfort, security,and energy efficiency. With a commitment to user-friendly products,BrightNest empowers homeowner environments";
+two.innerHTML = "through intuitive apps and seamless integration. Their mission is to create smarter living spaces that not only simplify daily routines but also contribute to sustainable living. As the smart home market continues to grow, BrightNest stands out for its dedication to quality and customer satisfaction.";
+
+
+function changed() {
+    document.getElementById('oner').style.display = "none"; 
+    document.getElementById('twoer').style.display = "block"; 
+    document.getElementById('just').style.display = "none"; 
+    document.getElementById('yust').style.display = "block"; 
+}
+
+function backer() {
+    document.getElementById('oner').style.display = "block"; 
+    document.getElementById('twoer').style.display = "none"; 
+    document.getElementById('just').style.display = "block"; 
+    document.getElementById('yust').style.display = "none";
+}
